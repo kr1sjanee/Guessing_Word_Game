@@ -23,15 +23,21 @@
             // Add more questions as needed
         );
 
-        // Display a random question
-        $randomQuestion = array_rand($questions);
+        // Check if a new random question is requested
+        $randomQuestion = isset($_POST['newQuestion']) ? array_rand($questions) : array_rand($questions);
         echo '<h2 class="text-center">' . $randomQuestion . '</h2>';
+        echo '<input type="hidden" name="randomQuestion" value="' . htmlspecialchars($randomQuestion) . '">';
         ?>
         <div class="form-group">
             <label for="answer">Your Answer:</label>
             <input type="text" class="form-control" id="answer" name="answer" required>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Submit Answer</button>
+    </form>
+
+    <form action="index.php" method="post" class="mt-3">
+        <input type="hidden" name="newQuestion" value="true">
+        <button type="submit" class="btn btn-secondary btn-block">Play Again</button>
     </form>
 </div>
 

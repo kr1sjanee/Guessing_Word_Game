@@ -8,11 +8,14 @@
 </head>
 <body>
 
-<div class="container mt-5">
+<div class="container mt-5 text-center">
     <h2>Result</h2>
     <?php
     // Retrieve user's answer from the form
     $userAnswer = isset($_POST['answer']) ? trim($_POST['answer']) : '';
+
+    // Retrieve the random question from the form
+    $randomQuestion = isset($_POST['randomQuestion']) ? $_POST['randomQuestion'] : '';
 
     // Array of questions and corresponding answers
     $questions = array(
@@ -23,7 +26,6 @@
     );
 
     // Get the correct answer for the displayed question
-    $randomQuestion = key($questions);
     $correctAnswer = $questions[$randomQuestion];
 
     // Check if the user's answer is correct
