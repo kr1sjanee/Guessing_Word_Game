@@ -20,24 +20,30 @@
             "What is the capital of France?" => "Paris",
             "Which planet is known as the Red Planet?" => "Mars",
             "What is the largest mammal in the world?" => "Blue Whale",
+            "What is the capital of Philippines?" => "Manila",
             // Add more questions as needed
         );
 
         // Check if a new random question is requested
-        $randomQuestion = isset($_POST['newQuestion']) ? array_rand($questions) : array_rand($questions);
-        echo '<h2 class="text-center">' . $randomQuestion . '</h2>';
-        echo '<input type="hidden" name="randomQuestion" value="' . htmlspecialchars($randomQuestion) . '">';
-        ?>
-        <div class="form-group">
+        $newQuestionRequested = isset($_POST['newQuestion']);
+
+        // If a new question is not requested, display a random question
+        if (!$newQuestionRequested) {
+            $randomQuestion = array_rand($questions);
+            echo '<h2 class="text-center">' . $randomQuestion . '</h2>';
+            echo '<input type="hidden" name="randomQuestion" value="' . htmlspecialchars($randomQuestion) . '">';
+        }
+
+        // Display the input field to collect the user's answer
+        echo '<div class="form-group">
             <label for="answer">Your Answer:</label>
             <input type="text" class="form-control" id="answer" name="answer" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Submit Answer</button>
-    </form>
+        </div>';
 
-    <form action="index.php" method="post" class="mt-3">
-        <input type="hidden" name="newQuestion" value="true">
-        <button type="submit" class="btn btn-secondary btn-block">Play Again</button>
+        // Display the "Play Again" button
+        echo '<button type="submit" class="btn btn-primary btn-block">Submit Answer</button>';
+        ?>
+        <input type="hidden" name="newQuestion" value="1"> <!-- Hidden field to indicate a new question request -->
     </form>
 </div>
 

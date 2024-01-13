@@ -22,6 +22,7 @@
         "What is the capital of France?" => "Paris",
         "Which planet is known as the Red Planet?" => "Mars",
         "What is the largest mammal in the world?" => "Blue Whale",
+        "What is the capital of Philippines?" => "Manila",
         // Add more questions as needed
     );
 
@@ -34,6 +35,10 @@
     } else {
         echo '<p class="text-danger">Incorrect. The correct answer is: ' . $correctAnswer . '</p>';
     }
+
+    // Generate a new random question for the next round
+    $newRandomQuestion = array_rand($questions);
+    $_SESSION['randomQuestion'] = $newRandomQuestion;
     ?>
     <a href="index.php" class="btn btn-primary">Play Again</a>
 </div>
