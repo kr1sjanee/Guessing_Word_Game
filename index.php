@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Semantic Guessing Game</title>
 </head>
-<body>
+<body style="background-color: cyan;">
 
-<div class="container mt-5">
-    <div class="jumbotron text-center">
+<div class="container mt-5 p-5">
+<div class="jumbotron text-center bg-success text-white">
         <h1 class="display-4">Guessing Word</h1>
+        <p class="lead">Test your knowledge with these fun questions!</p>
     </div>
 
     <form action="check_answer.php" method="post">
