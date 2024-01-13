@@ -40,8 +40,10 @@
             <input type="text" class="form-control" id="answer" name="answer" required>
         </div>';
 
-        // Display the "Play Again" button
-        echo '<button type="submit" class="btn btn-primary btn-block">Submit Answer</button>';
+        // Display the "Submit Answer" button
+        echo '<div class="form-group d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-primary">Submit Answer</button>
+        </div>';
         ?>
         <input type="hidden" name="newQuestion" value="1"> <!-- Hidden field to indicate a new question request -->
     </form>
