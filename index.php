@@ -9,7 +9,6 @@
 </head>
 <body style="background-color: cyan;">
 
-    // jumbotron to para sa title
     <div class="container mt-5 p-5">
     <div class="jumbotron text-center bg-success text-white">
         <h1 class="display-4">GuessWhat?</h1>

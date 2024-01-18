@@ -14,14 +14,12 @@
 <!-- Modal -->
 <div class="modal animated fadeIn" tabindex="-1" id="resultModal">
 
-    // Modal Header
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">Result</h2>
             </div>
 
-            // Modal Body
             <div class="modal-body">
                 <?php
                 // Retrieve user's answer from the form
@@ -68,7 +66,6 @@
                 ?>
             </div>
 
-            // Modal footer
             <div class="modal-footer">
                 <a href="index.php" class="btn btn-primary">Play Again</a>
             </div>
