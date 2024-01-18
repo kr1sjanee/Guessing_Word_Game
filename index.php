@@ -70,7 +70,7 @@
 
         // Display result in modal
         echo '<div class="modal fade" tabindex="-1" id="resultModal">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h2 class="modal-title">Result</h2>
