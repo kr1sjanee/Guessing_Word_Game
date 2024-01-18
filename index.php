@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%233498db'%3E%3Ccircle cx='12' cy='12' r='10' stroke='none' /%3E%3Ctext x='50%' y='50%' font-size='16' font-weight='bold' text-anchor='middle' dy='.3em' fill='%23ffffff'%3E?%3C/text%3E%3C/svg%3E" type="image/svg+xml">
     <title>Semantic Guessing Game</title>
 </head>
@@ -48,9 +49,9 @@
                 <input type="hidden" name="randomQuestion" value="' . htmlspecialchars($randomQuestion) . '">';
 
     // Display the input field to collect the user's answer
-    echo '<div class="form-group">
-                <label for="answer">Your Answer:</label>
-                <input type="text" class="form-control" id="answer" name="answer" required>
+    echo '<div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="answer" placeholder="Enter your answer" name="answer" required>
+                <label for="answer">Your Answer</label>
               </div>';
 
     // Display the "Submit Answer" button
@@ -102,6 +103,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
     // Move the modal display script outside of the PHP block
