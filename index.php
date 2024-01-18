@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%233498db'%3E%3Ccircle cx='12' cy='12' r='10' stroke='none' /%3E%3Ctext x='50%' y='50%' font-size='16' font-weight='bold' text-anchor='middle' dy='.3em' fill='%23ffffff'%3E?%3C/text%3E%3C/svg%3E" type="image/svg+xml">
     <title>Semantic Guessing Game</title>
 </head>
 <body style="background-color: cyan;">
