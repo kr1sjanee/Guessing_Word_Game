@@ -12,7 +12,7 @@
 
 <body style="background-color: cyan;">
 
-<div class="container mt-5 p-5">
+<div class="container mt-3 p-5">
     <div class="jumbotron text-center bg-success text-white">
         <h1 class="display-4">GuessWhat?</h1>
         <p class="lead">Test your knowledge with these fun questions!</p>
@@ -50,7 +50,7 @@
 
     // Display the input field to collect the user's answer
     echo '<div class="form-floating mb-3 mt-3">
-                <input type="text" class="form-control" id="answer" placeholder="Enter your answer" name="answer" required>
+                <input type="text" class="form-control" id="answer" placeholder="Enter your answer" name="answer" required autocomplete="off" readonly onfocus="this.removeAttribute(\'readonly\');" title="">
                 <label for="answer">Your Answer</label>
               </div>';
 
@@ -106,7 +106,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    // Move the modal display script outside of the PHP block
+    // Move the modal display script outside the PHP block
     $(document).ready(function () {
         $('#resultModal').modal('show');
     });
