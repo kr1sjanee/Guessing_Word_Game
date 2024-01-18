@@ -11,7 +11,7 @@
     // jumbotron to para sa title
     <div class="container mt-5 p-5">
     <div class="jumbotron text-center bg-success text-white">
-        <h1 class="display-4">Guessing Word</h1>
+        <h1 class="display-4">GuessWhat?</h1>
         <p class="lead">Test your knowledge with these fun questions!</p>
     </div>
 
