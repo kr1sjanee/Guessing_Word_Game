@@ -69,7 +69,7 @@
         $correctAnswer = $randomQuestion ? $questions[$randomQuestion] : '';
 
         // Display result in modal
-        echo '<div class="modal animated fadeIn" tabindex="-1" id="resultModal">
+        echo '<div class="modal fade" tabindex="-1" id="resultModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
