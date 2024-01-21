@@ -21,15 +21,11 @@
     <?php
     // Array of questions and corresponding answers
     $questions = array(
-        "What is the capital of France?" => "Paris",
-        "Which planet is known as the Red Planet?" => "Mars",
-        "What is the largest mammal in the world?" => "Blue Whale",
         "What is the capital of Philippines?" => "Manila",
         "What is the process of finding and fixing errors in a program?" => "Debug",
         "What type of loop repeats a block of code while a specified condition is true?" => "While",
         "In programming, what is a collection of related data items called?" => "Array",
         "What is the result of 2 + 2 in most programming languages?" => "4",
-        "What is the symbol of gold in periodic table?" => "Au",
         "What is the biggest star?" => "Sun",
         "What is the largest planet in our solar system?" => "Jupiter",
         "What is the primary purpose of a 'for' loop in programming?" => "Iteration",
