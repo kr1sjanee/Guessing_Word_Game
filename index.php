@@ -35,7 +35,9 @@
         "What is the default file extension for a Python script?" => ".py",
         "What is the result of dividing any number by zero in mathematics?" => "Undefined",
         "In web development, what language is used to style the presentation of a webpage?" => "CSS",
-        "IDE stands for" => "Integrated Development Environment"
+        "IDE stands for" => "Integrated Development Environment",
+        "What is the process of converting source code into machine code?" => "Compilation",
+        "What is the name of the version control system widely used in software development?" => "Git"
     );
 
     // Display a random question when the page loads
