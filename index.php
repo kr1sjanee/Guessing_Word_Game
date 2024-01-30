@@ -37,7 +37,8 @@
         "In web development, what language is used to style the presentation of a webpage?" => "CSS",
         "IDE stands for" => "Integrated Development Environment",
         "What is the process of converting source code into machine code?" => "Compilation",
-        "What is the name of the version control system widely used in software development?" => "Git"
+        "What is the name of the version control system widely used in software development?" => "Git",
+        "Sino ang pumatay kay Lapu-Lapu" => "Magellan"
     );
 
     // Display a random question when the page loads
