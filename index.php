@@ -38,7 +38,8 @@
         "IDE stands for" => "Integrated Development Environment",
         "What is the process of converting source code into machine code?" => "Compilation",
         "What is the name of the version control system widely used in software development?" => "Git",
-        "Sino ang pumatay kay Lapu-Lapu" => "Magellan"
+        "Sino ang pumatay kay Lapu-Lapu" => "Magellan",
+        "What is the framework created by Evan You?" => "Vue"
     );
 
     // Display a random question when the page loads
