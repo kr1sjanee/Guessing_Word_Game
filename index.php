@@ -40,7 +40,8 @@
         "What is the name of the version control system widely used in software development?" => "Git",
         "Sino ang pumatay kay Lapu-Lapu" => "Magellan",
         "What is the framework created by Evan You?" => "Vue",
-        "Pogi ba ako?" => "Oo"
+        "Pogi ba ako?" => "Oo",
+        "Ano sa Tagalog ng Test?" => "Test"
     );
 
     // Display a random question when the page loads
